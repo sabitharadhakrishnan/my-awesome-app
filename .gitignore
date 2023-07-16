@@ -33,6 +33,8 @@ yarn-error.log
 .sass-cache/
 /connect.lock
 /coverage
+/coverage-component
+/.nyc_output
 /libpeerconnection.log
 testem.log
 /typings
@@ -40,3 +42,8 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+#Cypress Output
+cypress/screenshots/
+cypress/videos/
+
