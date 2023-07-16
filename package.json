@@ -6,7 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test --no-watch --code-coverage"
+    "test": "ng test --no-watch --code-coverage",
+    "e2e": "ng e2e",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "private": true,
   "dependencies": {
@@ -26,6 +29,7 @@
     "@angular-devkit/build-angular": "^15.2.4",
     "@angular/cli": "~15.2.4",
     "@angular/compiler-cli": "^15.2.0",
+    "@cypress/schematic": "^2.5.0",
     "@types/jasmine": "~4.3.0",
     "cypress": "^12.17.1",
     "jasmine-core": "~4.5.0",
