@@ -2,38 +2,36 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
 
-1. Create a new app using Angular CLI. First install Angular CLI if you have not already.
-
+Create a new app using Angular CLI. First install Angular CLI if you have not already.
 
     npm install -g @angular/cli
     ng new my-awesome-app
     cd my-awesome-app
-
-1. Add Cypress Angular Schematic to quickly get up and running with Cypress in your Angular project. To install the schematic via cli arguments
+Add Cypress Angular Schematic to quickly get up and running with Cypress in your Angular project. To install the schematic via cli arguments
 
 
     ng add @cypress/schematic --e2e --component
 
-1. Add a component to your project and add cypress component tests. I followed Cypress documentation for creating a component and add component tests. <https://docs.cypress.io/guides/component-testing/angular/quickstart>
+Add a component to your project and add cypress component tests. I followed Cypress documentation for creating a component and add component tests. <https://docs.cypress.io/guides/component-testing/angular/quickstart>
 
-1. Add script to execute component tests in package.json.
+Add script to execute component tests in package.json.
 
 
     "test:component": "cypress run --component --env coverage=true"
 
-1. Install @cypress/code-coverage Cypress plugin.
+Install @cypress/code-coverage Cypress plugin.
 
 
     npm install -D @cypress/code-coverage
 
 #### Configure Cypress Code Coverage Plugin
 
-1. Open cypress/support/component.ts file and add the following code
+Open cypress/support/component.ts file and add the following code
 
 
     import '@cypress/code-coverage/support';
 
-1. Add setupNodeEvents functions in cypress configuration to the cypress.config.ts file.
+Add setupNodeEvents functions in cypress configuration to the cypress.config.ts file.
 
     
     setupNodeEvents(on, config) {
@@ -41,7 +39,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
       return config
     }
 
-1. Add a new file in the cypress folder coverage.webpack.ts and update it with the following code in order to configure webpack to instrument our code while executing component testing.
+Add a new file in the cypress folder coverage.webpack.ts and update it with the following code in order to configure webpack to instrument our code while executing component testing.
 
     
     export default {
